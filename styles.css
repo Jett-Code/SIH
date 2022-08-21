@@ -262,13 +262,14 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     font-size: 2.5rem;
-    padding-top: 200px;
+    padding-top: 100px;
   }
   
   .services__container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     
   }
@@ -285,31 +286,95 @@
 
   }
   
-  .services__card:before {
-    opacity: 0.2;
-  }
-  
-  
-  .services__card h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-  }
-  
-  .services__card p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-  }
-  
-
-  
-  .services__card button:hover {
-    cursor: pointer;
-  }
-  
   .services__card:hover {
     transform: scale(0.765);
     transition: 0.2s ease-in;
     cursor: pointer;
+  }
+
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.1fr 1.2fr 0.8fr;
+    background-color: #252326;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    height: 15vh;
+    padding-left: 60px;
+  }
+
+  .functions{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 90%;
+    height: 50%;
+  }
+
+  .functions:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  #foot{
+    color: #fff;
+    text-align: center;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    padding:  60px;
+    margin-bottom: 100px;
+    
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  .about__section{
+    text-align: center;
+    padding: 100px 0px;
   }
