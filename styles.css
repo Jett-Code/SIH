@@ -7,22 +7,20 @@
 
 .navbar {
     background:
-    #5d338a;
+    white;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
     top: 0;
-    z-index: 999;
+    
   }
 
 .navbar_container {
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
   width: 100%;
   max-width: 1300px;
   margin-right: auto;
@@ -31,14 +29,20 @@
 }  
 
 #navbar_logo {
-    background-color: #f1f1f1;
-    border-radius: 3rem;
+    background-color: white;
     display: flex;
     justify-content: center;
-    margin: 4px 0px;
+    margin: 2px 0px;
+    height: 150px;
+
     
   }
 
+#logo1 {
+  height: 50%;
+  width: 50%;
+  margin: 40px 0px;
+}
   .navbar_menu {
     display: flex;
     align-items: center;
@@ -51,7 +55,7 @@
   }
 
   .navbar_links {
-    color: #fff;
+    color: #252326;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,9 +75,9 @@
   
   .button {
     display: flex;
-    justify-content: center;
+     justify-content: center;
     align-items: center;
-    text-decoration: none;
+   text-decoration: none;
     padding: 10px 20px;
     height: 100%;
     width: 100%;
@@ -99,7 +103,7 @@
 
   .main {
     background-color:
-    #5d338a;
+    white;
   }
   
   .main_container {
@@ -110,9 +114,9 @@
     margin: 0 auto;
     height: 90vh;
     background:
-    #5d338a;
+   white;
     
-    z-index: 1;
+    
     width: 100%;
     max-width: 1300px;
     padding-right: 50px;
@@ -126,19 +130,19 @@
   
   .main_content h1 {
     font-size: 4rem;
-    background-color: #ffce01;
+    background-color: #252326;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    text-shadow: 1px 1px 5px #ffce01;
+    
   }
   
   .main_content h2 {
     font-size: 3.2rem;
     margin-top: 10px;
-    background-color:#ffce01;
+    background-color:#252326;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -151,6 +155,12 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
+    background-color: #252326;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     
   }
   
@@ -189,7 +199,7 @@
     
   }
   
-  .main__btn:hover {
+  .main_btn:hover {
     color: #fff;
   }
   
@@ -197,11 +207,109 @@
     width: 100%;
   }
   
-  .main_img--container {
+  .main_img-container {
     text-align: center;
   }
   
   #main_img {
     height: 40%;
     width: 40%;
+  }
+
+  @media screen and (max-width:480px) {
+    .main_container{
+      display:grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0px auto;
+      height: 90vh;
+    }
+
+    .main_content h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+  
+    .main_content h2 {
+      font-size: 2rem;
+    }
+  
+    .main_content p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+  
+    .main_btn {
+      padding: 10px 36px;
+      margin: 2.5rem 0;
+    }
+  }
+
+  .services {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .services h1 {
+    background-color: #252326;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    padding-top: 200px;
+  }
+  
+  .services__container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .services__card {
+    
+    height: 800px;
+    width: 20%;
+    border-radius: 4px;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    transform: scale(0.7);
+
+  }
+  
+  .services__card:before {
+    opacity: 0.2;
+  }
+  
+  
+  .services__card h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .services__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+
+  
+  .services__card button:hover {
+    cursor: pointer;
+  }
+  
+  .services__card:hover {
+    transform: scale(0.765);
+    transition: 0.2s ease-in;
+    cursor: pointer;
   }
