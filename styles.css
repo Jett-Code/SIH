@@ -91,13 +91,14 @@
   }
   
   .button:hover {
-    background:#ffce01;
+    background:#555;
     transition: all 0.3s ease;
   }
   
   .navbar_links:hover {
     color: 
-    #ffce01;
+    
+  #5aca7a;
     transition: all 0.3s ease;
   }
 
@@ -193,7 +194,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background:#ffce01;
+    background:#555;
     transition: all 0.35s;
     border-radius: 4px;
     
@@ -320,32 +321,34 @@
 
   .column {
     float: left;
-    width: 33.3%;
-    padding:  60px;
+    width: 20%;
+    padding:60px;
     margin-bottom: 100px;
     
   }
   
-  /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  /* Add some shadows to create a card effect */
+
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: .25rem;
+    border-radius: .75rem;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
+    transition: 00.2s ease-in;
+    cursor: pointer;
   }
   
-  /* Some left and right padding inside the container */
+
   .container {
     padding: 0 16px;
+    font-size: .9rem;
   }
-  
-  /* Clear floats */
+
+  .container h2{
+    font-size: 1.1rem;
+  }
+
   .container::after, .row::after {
     content: "";
     clear: both;
@@ -356,25 +359,32 @@
     color: grey;
   }
   
-  .button {
+  .abutton {
     border: none;
     outline: 0;
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: #252326;
     text-align: center;
     cursor: pointer;
     width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
+    border-radius: 4px;
   }
   
-  .button:hover {
+  .abutton:hover {
     background-color: #555;
+    transition: 0.3s ease-in;
   }
 
   .about__section{
     text-align: center;
     padding: 100px 0px;
+    background-color: #252326;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
